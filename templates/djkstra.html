@@ -1,0 +1,92 @@
+
+{% extends "header.html" %}
+{% block title %}Djkstra{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<body>
+    <div>
+    <div>
+        <h1>La matrice</h1>
+    </div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            {%for i in range(0, len1)%}
+      
+            <th scope="col">{{i+1}}</th>
+    
+            {%endfor%}
+          </tr>
+        </thead>
+          <tbody>
+               {%for i in range(0, len1)%}
+                    <tr>
+                      <th scope="row">{{i+1}}</th>
+                      {%for j in range(0, len1)%}
+                      <td>
+                        <input class="form-control form-control-sm" type="number" value="{{mat[i][j]}}" readonly>
+                      </td>
+                      
+                      {%endfor%}
+                    </tr>
+                {%endfor%}
+          </tbody>
+          </table>
+    </div>
+    <div>
+        <div><h1>Les ordres des arcs (resp: arêtes)</h1></div>
+
+    </div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Arêtes (arcs)</th>  
+            <th scope="col">Poids(π)</th>
+          </tr>
+        </thead>
+          <tbody>
+               {%for i in range(0, len2)%}
+                    <tr>
+                        <th scope="row">({{ordre[i][0]}}, {{ordre[i][1]}})</th>
+                        <td>
+                            {{ordre[i][2]}}
+                        </td>
+                    </tr>
+                {%endfor%}
+          </tbody>
+          </table>
+    </div>
+
+    <div>
+        <div><h1>Djkstra</h1></div>
+
+    </div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Sommets</th>
+      
+            <th scope="col">Potentiel</th>
+    
+          </tr>
+        </thead>
+          <tbody>
+               {%for i in range(len3)%}
+                    <tr>
+                      <th scope="row">{{matrice[i][0]}}</th>
+                     
+                      <td>
+                        {{matrice[i][1]}}
+                      </td>
+                      
+                    </tr>
+                {%endfor%}
+          </tbody>
+          </table>
+    </div>
+		<h3>Cliquer la pour afficher le <a href="{{url_for('dessin',ordre = ordre, nbrsommets=len1, sommets= chemin)}}"  target="_blank">Graphe </a> </h3>
+  <body>
+{% endblock %}

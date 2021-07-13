@@ -1,0 +1,19 @@
+
+{% extends "header.html" %}
+{% block title %}Taille de la matrice{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<body>
+  <h1>Le nombre de sommets </h1>
+<form method="POST" action="{{url_for('taille')}}">
+    <div class="input-group mb-3">
+      <input type="number" min="2" name ="len" class="form-control" placeholder="Saisissez le nombre de sommets" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">Créer</button>
+      </div>
+    </div>
+  </form>
+  <body>
+{% endblock %}
