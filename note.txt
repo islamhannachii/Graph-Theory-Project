@@ -1,0 +1,5 @@
+note
+pip install Flask
+pip install matplotlib
+pip install networkx 
+Pip install Flask-Session
