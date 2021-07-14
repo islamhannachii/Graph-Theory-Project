@@ -4,7 +4,7 @@ from bellmanFord import Graphee
 from djkstra import Graphe
 from connexe.Graph import Graph
 import networkx as nx 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from ast import literal_eval
 import math
 from markupsafe import escape
