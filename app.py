@@ -55,7 +55,7 @@ def algo2(mat,racine):
             row.append(o[i][1])
             a_list.append(tuple(row))
             row =[]
-        
+        print(nx.shortest_path(G, source=0, target=4))
         return render_template('bellmanFord.html',mat = mat, matrice = y, ordre = o, len1 = len(mat),len2=len(o),len3 = len(y),newlist=a_list)
 ##############################################################################
 #La  matrice

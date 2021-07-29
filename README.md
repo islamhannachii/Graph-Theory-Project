@@ -12,4 +12,14 @@ Follow this steps:
 1) In your teminal, enter to this folder and write this command to start application: FLASK RUN
 2) Enter to 127.0.0.1:5000 
 *********************************************************************************************************************************************
+1) First, here you have to enter the number of summits:
 ![imageone](./exemple/1.png)
+2) Second,  Fill the matrix (must be connex, if it's not,an error will be shown ) and choose an Alogrithm, here we have an example:
+![imagetow](./exemple/2.png)
+2)1) here an example of Bellman Ford Algorithm
+![imagethree](./exemple/3.png)
+2)2) Shortest path from the source (racine) to the last summit:
+![imagethree](./exemple/4.png)
+2)3)If you clicked on the GRAPHE your graph will be shown(same thing with Djakstra):
+![imagethree](./exemple/5.png)
+
