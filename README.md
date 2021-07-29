@@ -20,6 +20,6 @@ Follow this steps:
 ![imagethree](./exemple/3.png)
 2) 2) Shortest path from the source (racine) to the last summit:
 ![imagethree](./exemple/4.png)
-2) 3)If you clicked on the GRAPHE your graph will be shown(same thing with Djakstra):
+2) 3) If you clicked on the GRAPHE your graph will be shown(same thing with Djakstra):
 ![imagethree](./exemple/5.png)
 
