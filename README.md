@@ -1,5 +1,6 @@
-# THG
+# Graph Theory Project
 In this repository, I used python to build a backend of simple website for Algorithm of Bellman Ford ,Djekstra and represention of this graph.
+This project was for module of THG at my second year of Information Systems and software engineer as a student.
 *********************************************************************************************************************************************
 Requirement:
 You have to install this packages:
