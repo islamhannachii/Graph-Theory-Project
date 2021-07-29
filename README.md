@@ -12,3 +12,4 @@ Follow this steps:
 1) In your teminal, enter to this folder and write this command to start application: FLASK RUN
 2) Enter to 127.0.0.1:5000 
 *********************************************************************************************************************************************
+![imageone](./exemple/1.png)
